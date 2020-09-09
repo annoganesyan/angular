@@ -1,13 +1,588 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>MyFirstProject</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <meta name="format-detection" content="telephone=no">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/
+    normalize.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/just.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/mobile_menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Muli:300,400,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>E-com</title>
 </head>
+
 <body>
-  <app-root></app-root>
+    <nav class="nav-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+                    <a href="#" class="logo">Phoenic nav</a>
+                </div>
+                <div class="col-md-5 d-sm-none d-md-block ">
+                    <form>
+                        <div class="inner-form">
+                            <div class="input-select">
+                                <select>
+                                    <option>All Categories</option>
+                                    <option>New Arrivals</option>
+                                    <option>Sale</option>
+                                    <option>Ladies</option>
+                                    <option>Men</option>
+                                    <option>Clothing</option>
+                                    <option>Footwear</option>
+                                    <option>Accessories</option>
+                                </select>
+                            </div>
+                            <input class="search" type="text" placeholder="Search over 10,000 products" />
+                            <button class="btn-search" type="button"><i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3">
+                    <div class="navigation-icons">
+                        <div class="dropdown">
+                            <button class="dropbtn">Main
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Megameniu
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                        <div class="heart">
+                            <div class="cart__number">3</div>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+                        <div class="cart">
+                            <div class="cart__number">3</div>
+                            <a href="#"><i class="fas fa-cart-plus"></i></a>
+                        </div>
+                        <a href="#"><i class="far fa-user"></i></a>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="topnav" id="myTopnav">
+        <a href="#" class="active">Phoenic nav</a>
+        <a href="#">New</a>
+        <a href="#">Contact</a>
+        <a href="#">Search</a>
+        <a href="javascript:void(0);" class="icon_mobile" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-2 ">
+                    <div class="content-logo">Featured Products</div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="line">
+                        <hr>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="content-icons">
+                        <a href="#" class="all">All</a>
+                        <a href="#" class="power">Power Tools</a>
+                        <a href="#" class="hand">Hand Tools</a>
+                        <a href="#" class="plumbing">Plumbing</a>
+                        <div class="left-right ">
+                            <a href="#"><i class="fas fa-arrow-left"></i></a>
+                            <a href="#"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="com-md-1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="cards__content">
+    <div class="owl-item active" style="width: 224.5px; margin: 20px;"><div class="products-slider-col">
+        <div class="products-slider-container">
+            <div class="product-card product-card-hidden-buttons ">
+                <button class="card-quickview" type="button">
+                    <i class="fas fa-eye"></i>
+                </button>
+                <div class="card-badges">
+                    <div class="product-card-badge product-badge-new">New</div>
+                </div>
+                <div class="product-card-image product-image">
+                    <a href="#" class="product-image-wrapper">
+                        <img class="product-img" src="img/1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="product-description">
+                    <div class="product-card-name">
+                        <a href="#">Electric Planer Brandix KL370090G 300 Watts</a>
+                    </div>
+                    <div class="product-card-rating">
+                        <div class="product-card-rating-stars">
+                            <div class="rating">
+                                <div class="rating-wrapper">
+                                    <svg class="rating-star rating-star-active" width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                    <svg class="rating-star rating-star-active" width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                    <svg class="rating-star rating-star-active" width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                    <svg class="rating-star rating-star-active" width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                    <svg class="rating-star " width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-rating-legend">9 Reviews</div>
+                    </div>
+                    
+                </div>
+                <div class="product-card-actions">
+                    
+                    <div class="product-card-prices">
+                        $749.00
+                    </div>
+                    <div class="product-card-action-buttons">
+                        <button class="product-card-wishlist mr-2" type="button" "add="" to="" wishlist"="">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="product-card-compare mr-2" type="button" title="Compare">
+                            <i class="fas fa-chart-bar"></i>
+                        </button>
+                        <button class="product-card-addtocart" type="button" title="Add To Cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div></div>
+    <div class="owl-item active" style="width: 224.5px; margin: 20px;"><div class="products-slider-col">
+        <div class="products-slider-container">
+            <div class="product-card product-card-hidden-buttons ">
+                <button class="card-quickview" type="button">
+                    <i class="fas fa-eye"></i>
+                </button>
+                <div class="card-badges">
+                    <div class="product-card-badge product-badge-new">New</div>
+                </div>
+                <div class="product-card-image product-image">
+                    <a href="#" class="product-image-wrapper">
+                        <img class="product-img" src="img/1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="product-description">
+                    <div class="product-card-name">
+                        <a href="#">Electric Planer Brandix KL370090G 300 Watts</a>
+                    </div>
+                    <div class="product-card-rating">
+                        <div class="product-card-rating-stars">
+                            <div class="rating">
+                                <div class="rating-wrapper">
+                                    <svg class="rating-star rating-star-active" width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                    <svg class="rating-star rating-star-active" width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                    <svg class="rating-star rating-star-active" width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                    <svg class="rating-star rating-star-active" width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                    <svg class="rating-star " width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-rating-legend">9 Reviews</div>
+                    </div>
+                    
+                </div>
+                <div class="product-card-actions">
+                    
+                    <div class="product-card-prices">
+                        $749.00
+                    </div>
+                    <div class="product-card-action-buttons">
+                        <button class="product-card-wishlist mr-2" type="button" "add="" to="" wishlist"="">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="product-card-compare mr-2" type="button" title="Compare">
+                            <i class="fas fa-chart-bar"></i>
+                        </button>
+                        <button class="product-card-addtocart" type="button" title="Add To Cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div></div>
+    <div class="owl-item active" style="width: 224.5px; margin: 20px;"><div class="products-slider-col">
+        <div class="products-slider-container">
+            <div class="product-card product-card-hidden-buttons ">
+                <button class="card-quickview" type="button">
+                    <i class="fas fa-eye"></i>
+                </button>
+                <div class="card-badges">
+                    <div class="product-card-badge product-badge-new">New</div>
+                </div>
+                <div class="product-card-image product-image">
+                    <a href="#" class="product-image-wrapper">
+                        <img class="product-img" src="img/1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="product-description">
+                    <div class="product-card-name">
+                        <a href="#">Electric Planer Brandix KL370090G 300 Watts</a>
+                    </div>
+                    <div class="product-card-rating">
+                        <div class="product-card-rating-stars">
+                            <div class="rating">
+                                <div class="rating-wrapper">
+                                    <svg class="rating-star rating-star-active" width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                    <svg class="rating-star rating-star-active" width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                    <svg class="rating-star rating-star-active" width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                    <svg class="rating-star rating-star-active" width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                    <svg class="rating-star " width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-rating-legend">9 Reviews</div>
+                    </div>
+                    
+                </div>
+                <div class="product-card-actions">
+                    
+                    <div class="product-card-prices">
+                        $749.00
+                    </div>
+                    <div class="product-card-action-buttons">
+                        <button class="product-card-wishlist mr-2" type="button" "add="" to="" wishlist"="">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="product-card-compare mr-2" type="button" title="Compare">
+                            <i class="fas fa-chart-bar"></i>
+                        </button>
+                        <button class="product-card-addtocart" type="button" title="Add To Cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div></div>
+    <div class="owl-item active" style="width: 224.5px; margin: 20px;"><div class="products-slider-col">
+        <div class="products-slider-container">
+            <div class="product-card product-card-hidden-buttons ">
+                <button class="card-quickview" type="button">
+                    <i class="fas fa-eye"></i>
+                </button>
+                <div class="card-badges">
+                    <div class="product-card-badge product-badge-new">New</div>
+                </div>
+                <div class="product-card-image product-image">
+                    <a href="#" class="product-image-wrapper">
+                        <img class="product-img" src="img/1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="product-description">
+                    <div class="product-card-name">
+                        <a href="#">Electric Planer Brandix KL370090G 300 Watts</a>
+                    </div>
+                    <div class="product-card-rating">
+                        <div class="product-card-rating-stars">
+                            <div class="rating">
+                                <div class="rating-wrapper">
+                                    <svg class="rating-star rating-star-active" width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                    <svg class="rating-star rating-star-active" width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                    <svg class="rating-star rating-star-active" width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                    <svg class="rating-star rating-star-active" width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                    <svg class="rating-star " width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-rating-legend">9 Reviews</div>
+                    </div>
+                    
+                </div>
+                <div class="product-card-actions">
+                    
+                    <div class="product-card-prices">
+                        $749.00
+                    </div>
+                    <div class="product-card-action-buttons">
+                        <button class="product-card-wishlist mr-2" type="button" "add="" to="" wishlist"="">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="product-card-compare mr-2" type="button" title="Compare">
+                            <i class="fas fa-chart-bar"></i>
+                        </button>
+                        <button class="product-card-addtocart" type="button" title="Add To Cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div></div>
+    <div class="owl-item active" style="width: 224.5px; margin: 20px;"><div class="products-slider-col">
+        <div class="products-slider-container">
+            <div class="product-card product-card-hidden-buttons ">
+                <button class="card-quickview" type="button">
+                    <i class="fas fa-eye"></i>
+                </button>
+                <div class="card-badges">
+                    <div class="product-card-badge product-badge-new">New</div>
+                </div>
+                <div class="product-card-image product-image">
+                    <a href="#" class="product-image-wrapper">
+                        <img class="product-img" src="img/1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="product-description">
+                    <div class="product-card-name">
+                        <a href="#">Electric Planer Brandix KL370090G 300 Watts</a>
+                    </div>
+                    <div class="product-card-rating">
+                        <div class="product-card-rating-stars">
+                            <div class="rating">
+                                <div class="rating-wrapper">
+                                    <svg class="rating-star rating-star-active" width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                    <svg class="rating-star rating-star-active" width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                    <svg class="rating-star rating-star-active" width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                    <svg class="rating-star rating-star-active" width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                    <svg class="rating-star " width="13px" height="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <g class="rating-fill">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                        <g class="rating-stroke">
+                                            <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-rating-legend">9 Reviews</div>
+                    </div>
+                    
+                </div>
+                <div class="product-card-actions">
+                    
+                    <div class="product-card-prices">
+                        $749.00
+                    </div>
+                    <div class="product-card-action-buttons">
+                        <button class="product-card-wishlist mr-2" type="button" "add="" to="" wishlist"="">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="product-card-compare mr-2" type="button" title="Compare">
+                            <i class="fas fa-chart-bar"></i>
+                        </button>
+                        <button class="product-card-addtocart" type="button" title="Add To Cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></div>
+</div>
+
+
+
+
+
+    <script src="index.js"></script>
 </body>
+
 </html>
